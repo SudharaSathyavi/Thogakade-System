@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="376.0" prefWidth="332.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.POS.controller.CustomerDeleteFormController">
+   <children>
+      <Label layoutX="40.0" layoutY="14.0" prefHeight="17.0" prefWidth="252.0" text="Customer Delete Form">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Separator layoutX="23.0" layoutY="44.0" prefHeight="4.0" prefWidth="287.0" />
+      <TextField fx:id="txtId" layoutX="16.0" layoutY="79.0" onAction="#searchCustomerOnAction" prefHeight="43.0" prefWidth="300.0" promptText="Customer Id" />
+      <TextField fx:id="txtName" layoutX="17.0" layoutY="138.0" prefHeight="43.0" prefWidth="300.0" promptText="Customer Name" />
+      <TextField fx:id="txtAddress" layoutX="17.0" layoutY="196.0" prefHeight="43.0" prefWidth="300.0" promptText="Customer Address" />
+      <TextField fx:id="txtSalary" layoutX="16.0" layoutY="254.0" prefHeight="43.0" prefWidth="300.0" promptText="Customer Salary" />
+      <Button layoutX="57.0" layoutY="317.0" mnemonicParsing="false" onAction="#deleteCustomerOnAction" prefHeight="43.0" prefWidth="212.0" text="Delete Customer" textFill="#750303">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
